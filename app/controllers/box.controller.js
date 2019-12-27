@@ -26,7 +26,7 @@ exports.index = function(req, res) {
         if(err) {
             res.render('error', { message: JSON.parse(results.systems)});
         } else {
-            res.render('index', { 
+            res.render('index-slick', { 
                 categories: JSON.parse(results.categories) 
             });
         }
